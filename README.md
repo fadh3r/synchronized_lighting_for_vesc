@@ -18,6 +18,8 @@
 
 * [LM2596HVS](https://aliexpress.com/item/DC-DC-Converter-Adjustable-Power-Supply-DC-DC-Step-Down-3A-LM2596HVS-LM2596HV-DC-Step-Down/32485142548.html) -  DC-DC step down converter
 
+![connection diagram](synchronized_lighting.jpg)
+
 
 ## Tuning your VESC Synchronized Lighting
 
