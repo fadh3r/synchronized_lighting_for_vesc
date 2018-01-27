@@ -6,6 +6,8 @@
 
 * While standby - "breathing lights" mode enabed.
 
+[![Better to see once than hear a hundred times](https://img.youtube.com/vi/jkwX-VA8xU0/hqdefault.jpg)](https://youtu.be/jkwX-VA8xU0)
+
 
 ## This project is easy to repeat - all you need is:
 
@@ -13,31 +15,32 @@
 
 * [APA102](https://aliexpress.com/item/1m-5m-APA102-Smart-LED-Pixel-Strip-30-60-144-LEDs-Pixels-m-IP30-IP65-IP67/32780224340.html) - led strip
 
-* [LM2596HVS](https://aliexpress.com/item/DC-DC-Converter-Adjustable-Power-Supply-DC-DC-Step-Down-3A-LM2596HVS-LM2596HV-DC-Step-Down/32485142548.html)) -  DC-DC step down converter
+* [LM2596HVS](https://aliexpress.com/item/DC-DC-Converter-Adjustable-Power-Supply-DC-DC-Step-Down-3A-LM2596HVS-LM2596HV-DC-Step-Down/32485142548.html) -  DC-DC step down converter
 
 
 ## Tuning your VESC Synchronized Lighting
 
-1. Set strip length(led num) and strip brightness(1-31 max) in "lib/led_strip_apa102/led_strip_apa102.h" file:
+1. Set strip length(led num) and strip brightness(1-31 max) in **"lib/led_strip_apa102/led_strip_apa102.h"** file:
 ```#define LED_COUNT  42
 #define LED_STRIP_BRIGHTNESS  1
 ```
 
-2. Tune "WHEEL_SIZE_RATIO" constant in "main.cpp" for velocity of color pallete change
+2. Tune "WHEEL_SIZE_RATIO" constant in **"main.cpp"** for velocity of color pallete change
 ```
 const uint8_t WHEEL_SIZE_RATIO = 20;
 ```
 
-3. Tune "STANDBY_TIMEOUT" constant in order to enable standby lighting mode
+3. Also you can tune "STANDBY_TIMEOUT" constant in order to enable standby lighting mode
 ```
 const uint16_t STANDBY_TIMEOUT = 3000;
 ```
 
-4. Select "PPM and UART" in "APP setting" of "VESC tool".
+4. Select **"PPM and UART"** in **"APP setting"** of **"VESC tool"**.
 
 5. You are ready to go!
 
-6. You can create your own color palletes and set it up in "lib/color_palletes/color_palletes.h" file.
+6. You can create your own color palletes and set it up in **"lib/color_palletes/color_palletes.h"** file.
 
-## If you use this project and like it - Please Donate
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](LHTUV26X68QS6)
+### If you use this project and like it - Please Donate
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHTUV26X68QS6)
