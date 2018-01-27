@@ -6,6 +6,7 @@
 
 * While standby - "breathing lights" mode enabed.
 
+**click to watch video**
 [![Better to see once than hear a hundred times](https://img.youtube.com/vi/jkwX-VA8xU0/hqdefault.jpg)](https://youtu.be/jkwX-VA8xU0)
 
 
