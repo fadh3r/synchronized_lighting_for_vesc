@@ -18,13 +18,15 @@
 
 * [LM2596HVS](https://aliexpress.com/item/DC-DC-Converter-Adjustable-Power-Supply-DC-DC-Step-Down-3A-LM2596HVS-LM2596HV-DC-Step-Down/32485142548.html) -  DC-DC step down converter
 
+**don't forget to set stepdown converter to +5volts**
 ![connection diagram](synchronized_lighting.jpg)
 
 
 ## Tuning your VESC Synchronized Lighting
 
 1. Set strip length(led num) and strip brightness(1-31 max) in **"lib/led_strip_apa102/led_strip_apa102.h"** file:
-```#define LED_COUNT  42
+```
+#define LED_COUNT  42
 #define LED_STRIP_BRIGHTNESS  1
 ```
 
