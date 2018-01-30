@@ -46,6 +46,22 @@ const uint16_t STANDBY_TIMEOUT = 3000;
 
 6. You can create your own color palletes and set it up in **"lib/color_palletes/color_palletes.h"** file.
 
+
+## To compile this project in Arduino IDE:
+
+1. Create new folder for this project. For example name it **synchronized_lighting**.
+
+2. Copy main.cpp to this folder.
+
+3. Rename **main.cpp** to **synchronized_lighting.ino**
+
+4. Copy all files from **lib** folder and subfolders to your newly created directory **synchronized_lighting** folder.
+
+5. Open Arduino IDE and install **FastGPIO** and **APA102** libraries.
+
+6. Now you can compile and flash code.
+
+
 ### If you use this project and like it - Please Donate
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHTUV26X68QS6)
