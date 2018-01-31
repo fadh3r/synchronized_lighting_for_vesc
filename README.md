@@ -45,6 +45,11 @@ const uint16_t STANDBY_TIMEOUT = 3000;
 5. You are ready to go!
 
 6. You can create your own color palletes and set it up in **"lib/color_palletes/color_palletes.h"** file.
+    **CURRENT_PALLETE_WIDTH** must be equal to pallete elements, for example, if you want to create new pallete with 3 elements:
+    const hsv_color pallete_name[3] PROGMEM = { 0, 240, 0 };
+    or
+    const hsv_color another_pallete_name[6] PROGMEM = { 0, 240, 0, 240, 0, 240, };
+    so **CURRENT_PALLETE_WIDTH** must be equal to number in **[ ]** brackets and count of values in **{ }** brackets.
 
 
 ## To compile this project in Arduino IDE:
