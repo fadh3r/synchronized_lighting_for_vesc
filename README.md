@@ -26,8 +26,8 @@
 
 1. Set strip length(led num) and strip brightness(1-31 max) in **"lib/led_strip_apa102/led_strip_apa102.h"** file:
 ```
-#define LED_COUNT  42
-#define LED_STRIP_BRIGHTNESS  1
+#define LED_COUNT 42
+#define LED_STRIP_BRIGHTNESS 31
 ```
 
 2. Tune "WHEEL_SIZE_RATIO" constant in **"main.cpp"** for velocity of color pallete change
@@ -59,7 +59,9 @@ const uint16_t STANDBY_TIMEOUT = 3000;
 
 5. Open Arduino IDE and install **FastGPIO** and **APA102** libraries.
 
-6. Now you can compile and flash code.
+6. Compile!
+
+7. **Power down or even disconnect your VESC from Arduino when uploading new firmware.**
 
 
 ### If you use this project and like it - Please Donate
