@@ -47,13 +47,13 @@ const uint16_t STANDBY_TIMEOUT = 3000;
 6. You can create your own color palletes and set it up in **"lib/color_palletes/color_palletes.h"** file.
 <br/>
 **CURRENT_PALLETE_WIDTH** must be equal to pallete elements, for example, if you want to create new pallete with 3 elements:
-<br/>
+```
 const hsv_color pallete_name[3] PROGMEM = { 0, 240, 0 };
-<br/>
+```
 or
-<br/>
+```
 const hsv_color another_pallete_name[6] PROGMEM = { 0, 240, 0, 240, 0, 240, };
-<br/>
+```
 so **CURRENT_PALLETE_WIDTH** must be equal to number in **[ ]** brackets and count of values in **{ }** brackets.
 
 
