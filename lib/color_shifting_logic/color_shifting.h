@@ -22,6 +22,7 @@
     #include <stdint.h>
 
     extern  const uint8_t WHEEL_SIZE_RATIO;
+    extern  const uint8_t STRIP_DIRECTION;
 
     void update_strip_colors(void);
 
