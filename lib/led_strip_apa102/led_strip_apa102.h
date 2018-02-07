@@ -30,7 +30,7 @@
     /* define here number of leds on strip */
     #define LED_COUNT  42
     /* define APA102 brightness - 31 max */
-    #define LED_STRIP_BRIGHTNESS 1
+    #define LED_STRIP_BRIGHTNESS 31
 
     extern rgb_color led_strip_colors[];
 
