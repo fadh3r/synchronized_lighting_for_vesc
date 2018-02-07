@@ -24,7 +24,7 @@
 rgb_color get_pallete_color(uint32_t position) {
    uint16_t hue;
    rgb_color rgb_return_val;
-   if (position > 0)
+   if (position != 0)
       position = position % CURRENT_PALLETE_WIDTH;
    hue = pgm_read_word_near(CURRENT_PALLETE + position);
    rgb_return_val = hsvToRgb(hue, 255, 255);

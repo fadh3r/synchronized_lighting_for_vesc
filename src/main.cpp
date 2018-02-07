@@ -21,7 +21,7 @@
 #include "breathing_lights.h"
 #include "color_shifting.h"
 
-// set "STRIP_DIRECTION" to zero if you want to reverse color pallete direction
+// set "STRIP_DIRECTION" to zero if you want to reverse color movement
 const uint8_t STRIP_DIRECTION = 1;
 // tune "WHEEL_SIZE_RATIO" for velocity of color_pallete change
 const uint8_t WHEEL_SIZE_RATIO = 20;
@@ -41,6 +41,7 @@ void setup() {
   comm_uart_init();
   // delay for vesc startup
   delay(2000);
+
 }// END-OF-SETUP
 
 

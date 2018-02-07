@@ -28,19 +28,32 @@ extern "C" {
 };
 
 
-uint8_t strip_direction(uint8_t direction) {
-  direction = STRIP_DIRECTION ? direction : - direction;
-  return  direction;
-}
-
-
-void update_strip_colors(void) {
+void update_strip_colors_forward(void) {
   uint32_t current_tacho_value;
   uint32_t pallete_travel;
   current_tacho_value = bldc_get_tachometer_value();
   pallete_travel = current_tacho_value / WHEEL_SIZE_RATIO;
   for (uint8_t i; i < LED_COUNT; i++) {
-    led_strip_colors[i] = get_pallete_color(pallete_travel  + strip_direction(i));
+    led_strip_colors[i] = get_pallete_color(pallete_travel + i);
   }
+}
+
+
+void update_strip_colors_reverse(void) {
+  uint32_t current_tacho_value;
+  uint32_t pallete_travel;
+  current_tacho_value = bldc_get_tachometer_value();
+  pallete_travel = current_tacho_value / WHEEL_SIZE_RATIO;
+  for (uint8_t i; i < LED_COUNT; i++) {
+    led_strip_colors[i] = get_pallete_color(pallete_travel - i);
+  }
+}
+
+
+void update_strip_colors(void) {
+  if (STRIP_DIRECTION == 1)
+    update_strip_colors_forward();
+  else
+    update_strip_colors_reverse();
   update_strip();
 }
