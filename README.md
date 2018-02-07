@@ -56,6 +56,8 @@ const hsv_color another_pallete_name[6] PROGMEM = { 0, 240, 0, 240, 0, 240, };
 ```
 so **CURRENT_PALLETE_WIDTH** must be equal to number in **[ ]** brackets and count of values in **{ }** brackets.
 
+7. If you want to change direction of color movement tune "STRIP_DIRECTION" constant in **"main.cpp"**.
+
 
 ## To compile this project in Arduino IDE:
 
@@ -71,7 +73,7 @@ so **CURRENT_PALLETE_WIDTH** must be equal to number in **[ ]** brackets and cou
 
 6. Compile!
 
-7. **Power down or even disconnect your VESC from Arduino when uploading new firmware.**
+7. **Power down or even disconnect Arduino from your VESC when uploading new firmware.**
 
 
 ### If you use this project and like it - Please Donate

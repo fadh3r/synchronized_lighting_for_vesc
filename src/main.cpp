@@ -21,8 +21,10 @@
 #include "breathing_lights.h"
 #include "color_shifting.h"
 
+// set "STRIP_DIRECTION" to zero if you want to reverse color pallete direction
+const uint8_t STRIP_DIRECTION = 1;
 // tune "WHEEL_SIZE_RATIO" for velocity of color_pallete change
-const uint8_t WHEEL_SIZE_RATIO = 15;
+const uint8_t WHEEL_SIZE_RATIO = 20;
 // time in standby before breating lights
 const uint16_t STANDBY_TIMEOUT = 5000;
 

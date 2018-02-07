@@ -28,6 +28,11 @@ extern "C" {
 };
 
 
+uint8_t strip_direction(uint8_t direction) {
+  direction = STRIP_DIRECTION ? direction : - direction;
+  return  direction;
+}
+
 
 void update_strip_colors(void) {
   uint32_t current_tacho_value;
@@ -35,7 +40,7 @@ void update_strip_colors(void) {
   current_tacho_value = bldc_get_tachometer_value();
   pallete_travel = current_tacho_value / WHEEL_SIZE_RATIO;
   for (uint8_t i; i < LED_COUNT; i++) {
-    led_strip_colors[i] = get_pallete_color(pallete_travel  + i);
+    led_strip_colors[i] = get_pallete_color(pallete_travel  + strip_direction(i));
   }
   update_strip();
 }
