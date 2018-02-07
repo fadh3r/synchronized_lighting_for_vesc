@@ -79,3 +79,4 @@ so **CURRENT_PALLETE_WIDTH** must be equal to number in **[ ]** brackets and cou
 ### If you use this project and like it - Please Donate
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHTUV26X68QS6)
+
