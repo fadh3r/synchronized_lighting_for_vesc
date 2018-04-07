@@ -1,4 +1,4 @@
-# New Document# Synchronized Lighting for VESC
+# Synchronized Lighting for VESC #
 
 * The idea is to lightup the underbody of a skateboard in accordance with the movement - for example, like you skating the rainbow ;)
 
